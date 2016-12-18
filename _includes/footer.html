@@ -18,7 +18,7 @@
       <ul>
         {% for nav in site.data.footer-nav %}
         <li>
-          <a href="{{ nav.url }}">{{ nav.name }}</a>
+          <a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.name }}</a>
         </li>
         {% endfor %}
       </ul>
@@ -32,7 +32,7 @@
       {% endfor %}
     </ul>
 
-    <p>&#169;{{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.title }}</a> &bull; All rights reserved.</p>
+    <p>&#169;{{ site.time | date: '%Y' }} <a href="{{ site.url | prepend: site.baseurl }}">{{ site.title }}</a> &bull; All rights reserved.</p>
     <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe!</a>
 
   </footer>

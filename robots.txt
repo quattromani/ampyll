@@ -10,4 +10,4 @@ search: exclude
 User-agent: *
 Disallow:
 
-SITEMAP: {{ site.url }}/sitemap.xml
+SITEMAP: {{ site.url | prepend: site.baseurl }}/sitemap.xml

@@ -8,7 +8,7 @@
     {% else %}
     <li role="menuitem" itemprop="name">
       {% endif %}
-      <a href="{{ site.baseurl }}{{ nav.url }}" itemprop="url">{{ nav.name }}</a>
+      <a href="{{ nav.url | prepend: site.baseurl }}" itemprop="url">{{ nav.name }}</a>
     </li>
     {% endfor %}
   </ul>

@@ -3,7 +3,7 @@ title: The Team
 permalink: "/team/"
 class: team
 parent: team
-description: The PlaceWise leadership team brings together the deep knowledge of pioneers in mobile, wireless and broadband access
+description:
 categories: [team]
 ---
 
@@ -15,7 +15,7 @@ categories: [team]
     <div itemscope itemtype="http://schema.org/Person">
       <a href="{{ member.name | slugify }}">
         <figure>
-          <img src="/images/{{ member.image }}" itemprop="image" alt="{{ member.name }}">
+          <img src="{{ site.baseurl }}/images/{{ member.image }}" itemprop="image" alt="{{ member.name }}">
           <figcaption>
           <h3 itemprop="name">{{ member.name }}</h3>
             <span itemprop="jobTitle">{{ member.title }}</span><br>

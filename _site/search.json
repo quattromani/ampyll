@@ -1,0 +1,159 @@
+[
+  
+    {
+      "title"    : "Welcome to Jekyll!",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/jekyll/update/welcome-to-jekyll.html",
+      "date"     : "2016-12-10 09:26:07 -0700",
+      "content"  : "[  {% for post in site.posts %}    {      &quot;title&quot;    : &quot;{{ post.title | escape }}&quot;,      &quot;category&quot; : &quot;{{ post.category }}&quot;,      &quot;tags&quot;     : &quot;{{ post.tags | join: &#39;, &#39; }}&quot;,      &quot;url&quot;      : &quot;{{ site.baseurl }}{{ post.url }}&quot;,      &quot;date&quot;     : &quot;{{ post.date }}&quot;,      &quot;content&quot;  : &quot;{{ page.content | strip_html | strip_newlines | remove_chars | escape }}&quot;    } {% unless forloop.last %},{% endunless %}  {% endfor %}  ,  {% for page in site.pages %}   {    {% unless page.search == &quot;exclude&quot; %}     {% if page.title != nil %}        &quot;title&quot;    : &quot;{{ page.title | escape }}&quot;,        &quot;category&quot; : &quot;{{ page.category }}&quot;,        &quot;tags&quot;     : &quot;{{ page.tags | join: &#39;, &#39; }}&quot;,        &quot;url&quot;      : &quot;{{ site.baseurl }}{{ page.url }}&quot;,        &quot;date&quot;     : &quot;{{ page.date }}&quot;,        &quot;content&quot;  : &quot;{{ page.content | strip_html | strip_newlines | remove_chars | escape }}&quot;     {% endif %}     {% endunless %}   } {% unless forloop.last %},{% endunless %}  {% endfor %}]"
+    } 
+  
+  ,
+  
+   {
+    
+   } ,
+  
+   {
+    
+     
+        "title"    : "RSS",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/feed.xml",
+        "date"     : "",
+        "content"  : "      Ampyll        http://localhost:4000/        Sun, 18 Dec 2016 11:07:51 -0700    Sun, 18 Dec 2016 11:07:51 -0700    Jekyll v3.3.1                  Welcome to Jekyll!        &amp;lt;p&amp;gt;Youll find this post in your &amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;_posts&amp;lt;/code&amp;gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;jekyll serve&amp;lt;/code&amp;gt;, which launches a web server and auto-regenerates your site when a file is updated.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;To add new posts, simply add a file in the &amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;_posts&amp;lt;/code&amp;gt; directory that follows the convention &amp;lt;code class=&amp;quot;highlighter-rouge&amp;quot;&amp;gt;YYYY-MM-DD-name-of-post.ext&amp;lt;/code&amp;gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Jekyll also offers powerful support for code snippets:&amp;lt;/p&amp;gt;&amp;lt;figure class=&amp;quot;highlight&amp;quot;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-ruby&amp;quot; data-lang=&amp;quot;ruby&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;k&amp;quot;&amp;gt;def&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;nf&amp;quot;&amp;gt;print_hi&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;p&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;nb&amp;quot;&amp;gt;name&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;p&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt;  &amp;lt;span class=&amp;quot;nb&amp;quot;&amp;gt;puts&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;s2&amp;quot;&amp;gt;&amp;quot;Hi, &amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;si&amp;quot;&amp;gt;#{&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;nb&amp;quot;&amp;gt;name&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;si&amp;quot;&amp;gt;}&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s2&amp;quot;&amp;gt;&amp;quot;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;k&amp;quot;&amp;gt;end&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;print_hi&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;p&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s1&amp;quot;&amp;gt;&#39;Tom&#39;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;p&amp;quot;&amp;gt;)&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;#=&amp;amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&amp;lt;/span&amp;gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/figure&amp;gt;&amp;lt;p&amp;gt;Check out the &amp;lt;a href=&amp;quot;http://jekyllrb.com&amp;quot;&amp;gt;Jekyll docs&amp;lt;/a&amp;gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &amp;lt;a href=&amp;quot;https://github.com/jekyll/jekyll&amp;quot;&amp;gt;Jekylls GitHub repo&amp;lt;/a&amp;gt;. If you have questions, you can ask them on &amp;lt;a href=&amp;quot;https://github.com/jekyll/jekyll-help&amp;quot;&amp;gt;Jekylls dedicated Help repository&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;        Sat, 10 Dec 2016 09:26:07 -0700        http://localhost:4000/jekyll/update/welcome-to-jekyll.html        http://localhost:4000/jekyll/update/welcome-to-jekyll.html                        jekyll                update                    "
+     
+     
+   } ,
+  
+   {
+    
+   } ,
+  
+   {
+    
+     
+        "title"    : "What&#39;s New",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/news/",
+        "date"     : "",
+        "content"  : "News"
+     
+     
+   } ,
+  
+   {
+    
+     
+        "title"    : "Privacy Policy",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/privacy-policy/",
+        "date"     : "",
+        "content"  : "...  Table of Contents                                              Contact InformationIf you have any questions about this Site or these Terms of Use, please contact us using the following information:  Ampyll          ,            local     email   "
+     
+     
+   } ,
+  
+   {
+    
+     
+        "title"    : "Contact Us",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/contact-us/",
+        "date"     : "",
+        "content"  : "      Send"
+     
+     
+   } ,
+  
+   {
+    
+     
+        "title"    : "The Team",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/team/",
+        "date"     : "",
+        "content"  : "...                                                                                                            "
+     
+     
+   } ,
+  
+   {
+    
+     
+        "title"    : "Home",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/",
+        "date"     : "",
+        "content"  : "Home"
+     
+     
+   } ,
+  
+   {
+    
+   } ,
+  
+   {
+    
+     
+        "title"    : "About Us",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/about-us/",
+        "date"     : "",
+        "content"  : "About Us"
+     
+     
+   } ,
+  
+   {
+    
+     
+        "title"    : "Terms and Conditions",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/terms-and-conditions/",
+        "date"     : "",
+        "content"  : "...  Table of Contents                                              Contact InformationIf you have any questions about this Site or these Terms of Use, please contact us using the following information:  Ampyll          ,            local     email   "
+     
+     
+   } ,
+  
+   {
+    
+   } ,
+  
+   {
+    
+     
+     
+   } ,
+  
+   {
+    
+     
+     
+   } ,
+  
+   {
+    
+     
+        "title"    : "Welcome to Jekyll!",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/amps/jekyll/update/welcome-to-jekyll/",
+        "date"     : "2016-12-10 09:26:07 -0700",
+        "content"  : "Youll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.Jekyll also offers powerful support for code snippets:{% highlight ruby %}def print_hi(name)  puts &quot;Hi, #{name}&quot;endprint_hi(&#39;Tom&#39;)#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.{% endhighlight %}Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekylls GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekylls dedicated Help repository][jekyll-help].[jekyll]:      http://jekyllrb.com[jekyll-gh]:   https://github.com/jekyll/jekyll[jekyll-help]: https://github.com/jekyll/jekyll-help"
+     
+     
+   } 
+  
+]

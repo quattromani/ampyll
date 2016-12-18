@@ -1,15 +1,15 @@
 // Colors
 $color-white: #fff;
-$color-off-white: whitesmoke;
+$color-off-white: #f2f2f2;
 $color-black: #000;
-$color-grey: #9ba2a7;
-$color-light-light-grey: #e1e1e1;
-$color-light-grey: #e1e1e1;
-$color-dark-grey: #252627;
+$color-grey: #ccc;
+$color-dark-grey: darken($color-grey, 10%);
+$color-light-grey: lighten($color-grey, 10%);
+$color-light-light-grey: lighten($color-grey, 45%);
 
 // Brand Palette
-$color-brand-primary: #f89829; // Placewise Orange
-$color-brand-secondary: #696969; // Text
+$color-brand-primary: #ef272d; // Placewise Orange
+$color-brand-secondary: #454545; // Text
 $color-brand-tertiary: $color-white; // Background
 $color-brand-quaternary: #f1e9b4; // Creme
 $color-brand-quinary: #5d7876; // Aqua

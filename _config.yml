@@ -1,12 +1,12 @@
 # Site settings
-title: Placewise Media
-email: info@placewise.com
-url_slug: placewise
-description: "PlaceWise Media is one of the nation’s largest shopper media networks and the leading provider of digital marketing services to hundreds of malls and lifestyle centers across North America."
+title: Ampyll
+email: max@maxquattromani.com
+url_slug:
+description: ""
 baseurl: ""
 logo: "logo.png"
 version: 0.0.1
-url: "http://placewise.com"
+url: ""
 author: "Max Quattromani"
 
 # Build settings
@@ -41,7 +41,7 @@ exclude: ['node_modules']
 # Googles
 google_verify:
 google_analytics: false
-google_analytics_id: UA-16546876-3
+google_analytics_id:
 google_maps_javascript_api_key:
 
 # Page-type Defaults
@@ -62,21 +62,20 @@ defaults:
 
 # Phyical Attributes
 map:
-  address: '1390 Lawrence Street #300'
-  city: 'Denver'
+  address: '123 Main Street'
+  city: 'Anywhere'
   state: 'CO'
   zip: '80204'
-  latitude: '39.746376'
-  longitude: '-104.998912'
+  latitude: ''
+  longitude: ''
 
-phone: '(303)296-2413'
-tollfree: '(800)977-6255'
+phone: '(303)555-5555'
 
 # Socials
 social:
-  facebook: placewise
-  twitter: placewise
-  linkedin: placewise-media
-  snapchat: placewise
-  github: PlacewiseMedia
-  disqus: PlacewiseMedia
+  facebook:
+  twitter:
+  linkedin:
+  snapchat:
+  github:
+  disqus:

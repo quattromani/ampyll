@@ -1,0 +1,29 @@
+---
+title: The Team
+permalink: "/team/"
+class: team
+parent: team
+description: The PlaceWise leadership team brings together the deep knowledge of pioneers in mobile, wireless and broadband access
+categories: [team]
+---
+
+<div class="lede">...</div>
+
+<ul>
+  {% for member in site.data.team %}
+  <li>
+    <div itemscope itemtype="http://schema.org/Person">
+      <a href="{{ member.name | slugify }}">
+        <figure>
+          <img src="/images/{{ member.image }}" itemprop="image" alt="{{ member.name }}">
+          <figcaption>
+          <h3 itemprop="name">{{ member.name }}</h3>
+            <span itemprop="jobTitle">{{ member.title }}</span><br>
+            <span itemprop="description">{{ member.intro }}</span>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,523 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"app",
+				"applyurl"
+			],
+			[
+				"ca",
+				"CategoryName"
+			],
+			[
+				"row",
+				"rowIndex"
+			],
+			[
+				"border-to",
+				"border-top-right-radius: "
+			],
+			[
+				"border-radius",
+				"border-top-left-radius: "
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"inline",
+				"inline-block\tcompass"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"can",
+				"SFTP: Cancel Upload"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"gr",
+				"Grunt"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Q/Sites/ampyll"
+	],
+	"file_history":
+	[
+		"/Users/Q/Sites/scaffold/sandbox/suggestion-box/index.html",
+		"/Users/Q/Sites/scaffold/sandbox/flip-card/index.html",
+		"/Users/Q/Sites/scaffold/sandbox/xml/index.html",
+		"/Users/Q/Sites/scaffold/_site/css/scss/partials/typography.scss",
+		"/Users/Q/Sites/scaffold/sandbox/xml/US-Partner-Sample-Feed.xml",
+		"/Users/Q/Sites/scaffold/sandbox/xml/books.xml",
+		"/Users/Q/Sites/scaffold/sandbox/xml/parse-xml.js",
+		"/Users/Q/Sites/scaffold/sandbox/deals/index.html",
+		"/Users/Q/Sites/scaffold/css/build/main.min.css",
+		"/Users/Q/Sites/scaffold/_includes/patterns/forms/index.html",
+		"/Users/Q/Sites/scaffold/css/scss/partials/forms.scss",
+		"/Users/Q/Sites/scaffold/sandbox/webcam/index.html",
+		"/Users/Q/Sites/scaffold/js/rssfeed.js",
+		"/Users/Q/Sites/scaffold/_includes/foot.html",
+		"/Users/Q/Sites/x_maxquattromani/_TWC/core/css/scss/partials/images.scss",
+		"/Users/Q/Desktop/bridgeport/src/js/init.js",
+		"/Users/Q/Sites/scaffold/css/scss/partials/tables.scss",
+		"/Users/Q/Desktop/vero-beach/src/css/scss/base/_lists.scss",
+		"/Users/Q/Sites/scaffold/css/scss/globals/_mixins.scss",
+		"/Users/Q/Desktop/project/src/js/external-links.js",
+		"/Users/Q/Desktop/project/src/js/touch.js",
+		"/Users/Q/Sites/scaffold/css/scss/partials/lists.scss",
+		"/Users/Q/Sites/scaffold/css/main.css",
+		"/Users/Q/Sites/scaffold/css/scss/partials/base.scss",
+		"/Users/Q/Desktop/project/src/templates/partials/fonts.hbs",
+		"/Users/Q/Sites/scaffold/js/_styleguide.js",
+		"/Users/Q/Sites/scaffold/css/scss/partials/_styleguide.scss",
+		"/Users/Q/Sites/scaffold/js/_loadtime.js",
+		"/Users/Q/Sites/scaffold/_config.yml",
+		"/Users/Q/Sites/scaffold/_includes/styleguide/typography/headings/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/grid/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/grid/marginless/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/grid/marginless/combinations/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/grid/combinations/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/colors/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/buttons/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/best_practices/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/audio/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/about/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/flexbox/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/grid/flexbox/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/images/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/typography/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/typography/text_alignment/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/typography/inline_text/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/typography/headings/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/typography/fonts/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/typography/body_text/index.html",
+		"/Users/Q/Sites/scaffold/styleguide/typography/icons/index.html",
+		"/Users/Q/Sites/scaffold/css/scss/globals/_vars.scss",
+		"/Users/Q/Sites/scaffold/_includes/styleguide/typography/icons/index.html",
+		"/Users/Q/Sites/scaffold/css/scss/partials/image-content-panel.scss",
+		"/Users/Q/Sites/scaffold/css/partials/images.css",
+		"/Users/Q/Sites/scaffold/css/scss/partials/images.scss",
+		"/Users/Q/Sites/scaffold/css/partials/image-content-panel.css.map",
+		"/Users/Q/Sites/scaffold/css/scss/partials/modals.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/modules.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/pagination.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/videos.scss",
+		"/Users/Q/Sites/scaffold/css/scss/globals/_placeholders.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/helpers.scss",
+		"/Users/Q/Sites/scaffold/css/partials/pills.css",
+		"/Users/Q/Sites/scaffold/css/scss/partials/summary.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/tabs.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/tooltips.scss",
+		"/Users/Q/Sites/scaffold/css/partials/tooltips.css",
+		"/Users/Q/Sites/scaffold/css/partials/modules.css",
+		"/Users/Q/Sites/scaffold/css/partials/base.css",
+		"/Users/Q/Sites/scaffold/css/scss/partials/audio.scss",
+		"/Users/Q/Sites/scaffold/css/scss/main.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/accordion.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/pills.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/typography.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/buttons.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/accessibility.scss",
+		"/Users/Q/Sites/scaffold/css/partials/forms.css",
+		"/Users/Q/Sites/scaffold/_site/css/scss/partials/base.scss",
+		"/Users/Q/Sites/scaffold/css/main.css.map",
+		"/Users/Q/Sites/scaffold/css/scss/partials/syntax.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/scrollTo.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/carousel.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/drop.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/font-awesome.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/message-box.scss",
+		"/Users/Q/Sites/scaffold/css/scss/partials/_jumpTo.scss",
+		"/Users/Q/Sites/scaffold/css/scss/globals/_allGlobals.scss",
+		"/Users/Q/Sites/scaffold/css/scss/globals/_functions.scss",
+		"/Users/Q/Sites/scaffold/package.json",
+		"/Users/Q/Sites/scaffold/css/partials/accessibility.css",
+		"/Users/Q/Sites/scaffold/css/scss/partials/overrides.scss",
+		"/Users/Q/Sites/scaffold/_includes/patterns/accordion/index.html",
+		"/Users/Q/Sites/scaffold/js/tabs.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/selector-native/selector-native.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/selector-css3/selector-css3.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/selector-css2/selector-css2.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/selector/selector-min.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/selector/selector-debug.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/selector/selector-coverage.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-stylus/node_modules/nib/node_modules/stylus/lib/nodes/selector.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/selector/selector.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-less/node_modules/less/lib/less/tree/selector.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/nodes/selector.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-less/node_modules/less/test/less/selectors.less",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-less/node_modules/less/test/css/selectors.css",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-autoprefixer/node_modules/autoprefixer/lib/selector.js",
+		"/Users/Q/Sites/scaffold/_site/js/select.js",
+		"/Users/Q/Sites/scaffold/js/select.js",
+		"/Users/Q/Sites/scaffold/node_modules/grunt-contrib-sass/docs/sass-examples.md",
+		"/Users/Q/Sites/scaffold/scaffold.sublime-project",
+		"/Users/Q/Sites/scaffold/_includes/patterns/select/index.html",
+		"/Users/Q/Sites/scaffold/patterns/index.html",
+		"/Users/Q/Sites/scaffold/js/accordion.js",
+		"/Users/Q/Sites/scaffold/patterns/accordion/index.html",
+		"/Users/Q/Sites/scaffold/patterns/select/index.html",
+		"/Users/Q/Sites/scaffold/js/vendor/jquery.cookie.min.js",
+		"/Users/Q/Sites/x_maxquattromani/_TWC/core/js/tabs.js",
+		"/Users/Q/Sites/scaffold/_includes/patterns/tabs/index.html",
+		"/Users/Q/Sites/scaffold/patterns/tabs/index.html",
+		"/Users/Q/Sites/scaffold/sandbox/counters/index.html",
+		"/Users/Q/Sites/scaffold/css/partials/helpers.css",
+		"/Users/Q/Sites/scaffold/_site/css/partials/helpers.css",
+		"/Users/Q/Sites/scaffold/js/tooltips.js",
+		"/Users/Q/Sites/scaffold/_includes/head.html",
+		"/Users/Q/Sites/scaffold/.htaccess",
+		"/Users/Q/Sites/scaffold/css/partials/typography.css",
+		"/Users/Q/Sites/scaffold/js/placeholder.js",
+		"/Users/Q/Sites/scaffold/Gruntfile.js",
+		"/Users/Q/Sites/scaffold/_includes/patterns/tooltips/index.html"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<project>",
+			"/Users/Q/Sites/scaffold",
+			"<project>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"font",
+			"lightgrey",
+			"^=\"htt",
+			"respons",
+			"scss",
+			"highlight",
+			"resize",
+			"Modal",
+			"modal",
+			"Modal",
+			"modal",
+			"Modal",
+			"modal",
+			"Modal",
+			"modal",
+			"Modal",
+			"modal",
+			"Modal",
+			"modal",
+			"Modal",
+			"modal",
+			"Modal",
+			"modal",
+			"Modal",
+			"modal",
+			"modal-",
+			"dilog",
+			".modal-",
+			"height",
+			"modal-",
+			".modal",
+			"<div class=\"modal\">",
+			".base-font-family",
+			"pre",
+			"push",
+			"snippet",
+			"media",
+			"medi",
+			"titletag",
+			"h4",
+			"title",
+			"titletag",
+			"h4",
+			"size",
+			"images",
+			"srJobList ",
+			"srjoblist",
+			"size",
+			"line-height",
+			"line-h",
+			"font",
+			"place",
+			"top",
+			"muted",
+			"transf",
+			"filter",
+			" ",
+			"%clearfix",
+			"clearf",
+			"box-column",
+			"&:hover",
+			"activecontent",
+			"aactivecontent",
+			"active-content",
+			".accessibility",
+			"svg:not(:root",
+			"background-color: trans",
+			"[hidden]",
+			"audio",
+			"width-",
+			"width",
+			".fs",
+			"filter",
+			"filters",
+			"$size",
+			"$to-color",
+			"$from-color",
+			"backgro",
+			"transform",
+			"@include rem",
+			"rem-calc",
+			"sizing",
+			"fillit",
+			"sup",
+			"#fillit",
+			"fillit",
+			"high",
+			"autocomplete=\"",
+			"bulleted",
+			".relative",
+			".fixed {",
+			".fixed",
+			".relative",
+			"legend",
+			"[disabled]",
+			"webki",
+			"bold",
+			"strong {",
+			"strong",
+			"[hidden]",
+			"gradient",
+			"scss",
+			"ie9",
+			"mobile-",
+			"\";",
+			"@import ",
+			"support-legacy",
+			"header",
+			"outer",
+			"fontaw",
+			"fontawesome",
+			"red",
+			"></",
+			"sex",
+			"<label for=\"\"></label>",
+			"></",
+			"png",
+			"mod_headers",
+			"deflate",
+			"-webkti",
+			"dark",
+			"dotted",
+			"bordered-right",
+			"bordered",
+			"jQuery",
+			"blue",
+			"=\"\">I'm",
+			"wrapper"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"layout: default",
+			"resp.",
+			"@include first;",
+			"first-child",
+			"h3",
+			"border: 0;",
+			"@import '../globals/allGlobals';",
+			"<a",
+			"docs",
+			"nationality",
+			"/SSM/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 122.0
+	},
+	"pinned_build_system": "",
+	"project": "ampyll.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 267.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

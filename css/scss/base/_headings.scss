@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+// Build Headings
+$i: 1;
+@each $value in $heading-list {
+	#{nth($value, 1)},
+	.#{nth($value, 1)} {
+    @include font-size(nth($value, 2));
+    font-family: nth($value, 4);
+    font-weight: nth($value, 3);
+    line-height: $heading-line-height;
+    color: nth($value, 5);
+    // this if statement fixes an issue with how IE handles 'initial'
+    // which we have littered throughout heading-vars files
+    @if nth($value, 6) == 'initial' {
+      text-transform: none;
+    } @else {
+      text-transform: nth($value, 6);
+    }
+
+    @if $i <= 3 {
+     @include media($tablet) {
+      @include font-size(nth($value, 2) * .875);
+    }
+
+    @include media($mobile) {
+      @include font-size(nth($value, 2) * .75);
+    }
+  }
+}
+$i: $i + 1 !global;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	display: inline-block;
+}
+
+@if $article-header {
+  h1 {
+    @include article-header;
+  }
+}
+
+@include media($mobile) {
+  h1 {
+    @include font-size($h1-mobile);
+  }
+
+  h2 {
+    @include font-size($h2-mobile);
+  }
+
+  h3 {
+    @include font-size($h3-mobile);
+  }
+
+  h4 {
+    @include font-size($h4-mobile);
+  }
+
+  h5 {
+    @include font-size($h5-mobile);
+  }
+
+  h6 {
+    @include font-size($h6-mobile);
+  }
+}

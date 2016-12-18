@@ -1,0 +1,68 @@
+@mixin icon($icon) {
+  @include font-family($fontawesome);
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: $icon;
+  line-height: normal;
+}
+
+@mixin icon-before($icon, $position: relative, $padding: $half-spacing, $font-size: inherit, $color: inherit, $left: null, $float: none, $hover-color: null, $vertical-align: null, $z-index: auto) {
+  &::before {
+    @include icon($icon);
+    @include font-size($font-size);
+    float: $float;
+    position: $position;
+    left: $left;
+    margin-right: $padding;
+    color: $color;
+    vertical-align: $vertical-align;
+    z-index: $z-index;
+  }
+
+  // Jeff: add a hover color
+  @if $hover-color != null {
+    &:hover {
+      &::before {
+        color: $hover-color;
+      }
+    }
+  }
+}
+
+@mixin icon-after($icon, $position: relative, $padding: $half-spacing, $font-size: inherit, $color: inherit, $right: null, $float: none, $hover-color: null, $z-index: auto, $vertical-align: null) {
+  &::after {
+    @include icon($icon);
+    @include font-size($font-size);
+    float: $float;
+    position: $position;
+    right: $right;
+    margin-left: $padding;
+    color: $color;
+    vertical-align: $vertical-align;
+    z-index: $z-index;
+  }
+
+  // Jeff: add a hover color
+  @if $hover-color != null {
+    &:hover {
+      &::after {
+        color: $hover-color;
+      }
+    }
+  }
+}
+
+@mixin icon-insert($icon, $position: relative, $font-size: inherit, $color: inherit, $top: null, $right: null, $hover-color: null, $z-index: auto, $vertical-align: null) {
+  &::after {
+    @include icon($icon);
+    @include font-size($font-size);
+    position: $position;
+    top: $top;
+    right: $right;
+    color: $color;
+    vertical-align: $vertical-align;
+    z-index: $z-index;
+  }
+}

@@ -1,0 +1,14 @@
+// Margin
+@mixin margin($top: 0, $right: null, $bottom: null, $left: null) {
+  @if $top == 'auto' {
+    margin-right: auto;
+    margin-left: auto;
+  } @else {
+    margin: $top $right $bottom $left;
+  }
+}
+
+// Padding
+@mixin padding($top: 0, $right: null, $bottom: null, $left: null) {
+  padding: $top $right $bottom $left;
+}

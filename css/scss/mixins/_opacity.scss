@@ -1,0 +1,9 @@
+// Opacity
+@mixin opacity($opacity) {
+  @if $support-legacy {
+    filter: alpha(opacity=$opacity*100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=#{$opacity*100});
+  }
+  opacity: $opacity;
+}
+

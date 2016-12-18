@@ -1,0 +1,10 @@
+// Text overflow
+// Requires inline-block or block for proper styling
+@mixin text-overflow($w: 100%, $overflow: ellipsis, $display: inline-block) {
+  display: $display;
+  width: $w;
+  overflow: hidden;
+  text-overflow: $overflow;
+  white-space: nowrap;
+  word-wrap: normal;
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+// Horizontal Rules
+hr {
+  @include box-sizing(content-box);
+  @include margin($base-spacing 0);
+  clear: both;
+  border: 0;
+  border-top: 1px solid $hr-color-top;
+  border-bottom: 1px solid $hr-color-bottom;
+}

@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+// Forms
+input,
+textarea,
+label,
+select {
+  @include font-size($form-font-size);
+  vertical-align: baseline;
+}
+
+select {
+  text-indent: .01px;
+  text-overflow: '';
+  -moz-appearance: none;
+}
+
+input,
+textarea,
+select {
+  @include padding($half-spacing);
+  @include margin(0 0 ($half-spacing));
+  @include border-radius;
+  @include rgba($color-black, 0);
+  @include font-family($base-font-family);
+  @include transition(all, .2s, ease-in-out);
+  @include box-shadow(inset 0 0 1px 0 $form-border-color);
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  background-color: $color-off-white;
+  font-weight: $form-font-weight;
+
+  &[type='search'] {
+    -webkit-appearance: none;
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-datetime-edit-fields-wrapper {
+      -webkit-appearance: none;
+    }
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    @include transition;
+    -webkit-text-fill-color: $color-brand-primary;
+  }
+}
+
+textarea {
+  min-height: 2em;
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+label {
+  @include font-family($form-label-font-family);
+  @include font-size($form-label-font-size);
+  display: block;
+  text-align: left;
+
+  &[for=shoptcha] {
+    img {
+      @include padding($half-spacing);
+      display: block;
+      width: auto;
+      border: 1px solid $color-light-grey;
+    }
+  }
+}
+
+input + label {
+  display: inline;
+  margin-bottom: $half-spacing;
+}
+
+legend {
+  @include font-size($form-legend-font-size);
+  width: 100%;
+  margin-top: $base-spacing;
+  margin-bottom: $half-spacing;
+  padding-bottom: $half-spacing;
+  border-bottom: $form-legend-border-thickness solid $color-light-grey;
+  font-weight: $form-legend-font-weight;
+  text-transform: uppercase;
+}
+
+input {
+  &[type="radio"],
+  &[type="checkbox"] {
+    width: auto;
+    margin-right: $half-spacing;
+    box-shadow: none;
+
+    &:focus {
+      @include box-shadow(none);
+      outline: none;
+    }
+  }
+
+  &[type="submit"] {
+    @extend button;
+    width: auto;
+    -webkit-appearance: none;
+  }
+
+  &[type="range"] {
+    width: 100%;
+    height: .5em;
+    outline: none;
+    border: none;
+    background-color: $color-light-grey;
+    -webkit-appearance: none;
+
+    &::-webkit-slider-thumb {
+      @include size(1em);
+      @include border-radius(100%);
+      background-color: $color-grey;
+      -webkit-appearance: none;
+    }
+  }
+}
+
+input::-webkit-datetime-edit-fields-wrapper {
+  @include font-family($base-font-family);
+}
+
+select,
+datalist,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.required:after {
+  content: '*';
+}
+
+// Honeypot
+.fillit {
+  display: none;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  @include opacity(0);
+}
+
+// Errors and Validation
+.email-register-messages {
+  @include font-family($heading-font-family-alt);
+  color: $alert-color;
+
+  ul {
+    @include bulleted;
+  }
+
+  span {
+    &:before {
+      content: '*';
+    }
+
+    &:last-of-type {
+      margin-bottom: $half-spacing;
+    }
+  }
+}
+
+.invalid input:required:invalid {
+  border: 2px solid $alert-color;
+}
+
+form {
+  .half {
+    float: left;
+    width: 49%;
+    margin-left: 2%;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}

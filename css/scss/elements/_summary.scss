@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+// Summary
+details {
+	@include margin($half-spacing 0);
+	background-color: lighten($color-light-grey, 5%);
+
+	summary {
+    @include padding($half-spacing $base-spacing);
+    @include icon-before($icon-chevron-down);
+    @include transition;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    background-color: $color-grey;
+    color: $color-white;
+    cursor: pointer;
+
+    // Hide the Default Marker
+    &::-webkit-details-marker {
+    	display: none;
+    }
+  }
+
+  &[open] summary {
+  	@include icon-before($icon-chevron-up);
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  > :not(summary) {
+    @include padding($half-spacing $base-spacing);
+  }
+
+  ul {
+    @include bulleted;
+  }
+}

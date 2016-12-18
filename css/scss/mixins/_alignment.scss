@@ -1,0 +1,33 @@
+// Centering
+@mixin center($position) {
+  @if $position == 'vertical' {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @else if $position == 'horizontal' {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  @else if $position == 'both' {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @else if $position == 'auto' {
+    margin-right: auto;
+    margin-left:  auto;
+  }
+
+  @else if $position == 'reset' {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: none;
+  }
+}

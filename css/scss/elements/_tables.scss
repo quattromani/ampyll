@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+table {
+  table-layout: fixed;
+  margin: $table-margin-t-b $table-margin-l-r;
+}
+
+th {
+  padding: $table-th-padding-t-b $table-th-padding-l-r;
+  border-bottom: 1px solid darken($base-border-color, 15);
+  font-weight: $table-th-font-weight;
+  text-align: left;
+}
+
+tr {
+  &.bordered {
+    display: block;
+    margin: $base-spacing 0;
+    border-bottom: 1px solid $color-light-grey;
+  }
+}
+
+td {
+  padding: $table-td-padding-t-b $table-td-padding-l-r;
+
+  label {
+    display: inline-block;
+    width: auto;
+    max-width: 300px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}

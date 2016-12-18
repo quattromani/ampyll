@@ -1,0 +1,21 @@
+// Column Count
+@mixin columns($count, $gap) {
+  column-count: $count;
+  column-gap: $gap;
+
+  li {
+    display: inline-block;
+  }
+}
+
+[class^='number-of-items-'] {
+  li {
+    @include media($tablet) {
+      @include span-columns(4);
+    }
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+}

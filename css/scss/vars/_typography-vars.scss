@@ -1,0 +1,34 @@
+// Typography Basics
+$base-font-reset: 10px;
+$base-font-size: 16;
+$base-font-weight: 200;
+$base-line-height: 1.443;
+$lede-font-size: $base-font-size * 1.125;
+$body-text: $base-font-size;
+$small-body-text: $base-font-size * .875;
+$disclaimer-text: $base-font-size * .75;
+$legal-text: $small-body-text;
+$sup-font-size: 75%;
+
+// Modular Scale
+$modular-scale-ratio: 1.61803398875;
+
+// Font Families List
+$font-faces: (
+  'gotham-book': ('gotham/gotham-book-webfont', normal),
+  'gotham-medium': ('gotham/gotham-medium-webfont', normal),
+  'gotham-bold': ('gotham/gotham-bold-webfont', normal),
+);
+
+$font-path: 'https://s3.amazonaws.com/placewisesitecontent/fonts/';
+
+// Font Families
+$base-font-family: 'gotham-book';
+$base-font-family-alt: 'gotham-bold';
+$fontawesome: 'FontAwesome';
+$pre: Inconsolata,Monaco,Consolas,'Andale Mono','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
+
+// Inline Text Elements
+$em-color: $base-font-color;
+$mark-bg: $info-color;
+$mark-color: $base-font-color;

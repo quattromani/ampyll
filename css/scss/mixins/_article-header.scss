@@ -1,0 +1,56 @@
+// Article Header
+@mixin article-header($font-family: $article-header-font-family, $font-size: $article-header-font-size, $font-weight: $article-header-font-weight, $color: $article-header-color, $border-color: $article-header-border-color, $text-transform: $article-header-text-transform, $letter-spacing: $article-header-letter-spacing, $text-align: $article-header-text-align ) {
+  @include font-family($font-family);
+  @include font-size($font-size);
+  margin-bottom: $article-header-margin;
+  padding-bottom: $article-header-padding;
+  @if ($border-color) != null {
+    border-bottom: 1px solid $border-color;
+  }
+  color: $color;
+  text-transform: $text-transform;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  text-align: $article-header-text-align;
+
+  @include media($mobile) {
+    margin-bottom: $article-header-margin-bottom;
+    border-bottom: 1px solid $border-color;
+
+    @if $article-header-mobile {
+      @include padding($half-spacing $base-spacing);
+      @include font-size($article-header-font-size-mobile);
+      width: calc(100% +  #{$double-spacing});
+      margin-left: -$base-spacing;
+      border-bottom: none;
+      background-color: $article-header-bg-mobile;
+      color: $article-header-color-mobile;
+    }
+
+    &.stick {
+      position: fixed;
+      top: 0;
+      z-index: 999;
+    }
+  }
+}
+
+.article-header {
+  @include article-header;
+}
+
+.article-header-add {
+  position: $article-header-add-position;
+  right: 0;
+  top: $article-header-add-top;
+
+  a {
+    @include font-family($article-header-add-font-family);
+  }
+
+  @include media($mobile) {
+    position: relative;
+    top: unset;
+    margin-bottom: $base-spacing;
+  }
+}

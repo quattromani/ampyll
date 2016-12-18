@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+// Buttons
+button,
+.btn, {
+  @include margin;
+  @include padding($base-button-padding-t-b $base-button-padding-l-r);
+  @include border-radius($base-button-border-radius);
+  @include font-size($base-button-font-size);
+  display: inline-block;
+  border: 0;
+  background: none;
+  background-color: $base-button-bg;
+  font-family: $base-button-font-family;
+  font-weight: $base-button-font-weight;
+  color: $base-button-color;
+  text-align: center;
+  text-transform: $base-button-text-transform;
+  cursor: pointer;
+  letter-spacing: $base-button-letter-spacing;
+  // Performance improvements
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  touch-action: none;
+
+  &:hover {
+    background-color: $base-button-bg-hover;
+    color: $base-button-color-hover;
+    text-decoration: $base-button-text-decoration-hover;
+  }
+
+  &:focus {
+    background-color: $base-button-focus-bg;
+    background-image: 0;
+    outline: none;
+  }
+
+  &.btn-primary {
+    background-color: $base-button-bg;
+    color: $base-button-color;
+
+    &:hover {
+      background: $base-button-bg-hover;
+    }
+  }
+
+  &.js-disabled,
+  &.disabled {
+    background-color: $base-button-disabled-bg;
+    color: $base-button-color;
+    cursor: not-allowed;
+    pointer-events: none;
+
+    &:hover {
+      background-color: $color-light-grey;
+      color: $base-button-color;
+    }
+  }
+}

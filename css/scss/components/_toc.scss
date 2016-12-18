@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.toc {
+  @include margin($base-spacing 0);
+
+  h5 {
+    @include margin;
+    @include padding($half-spacing $base-spacing);
+    background: $color-light-grey;
+  }
+
+  ul {
+    border: 1px solid $color-light-grey;
+  }
+
+  li {
+    border-bottom: 1px solid $color-light-grey;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    > a {
+      @include padding($half-spacing $base-spacing);
+      display: block;
+      color: $color-brand-secondary;
+
+      &:hover,
+      &:focus {
+        background-color: $color-light-grey;
+        color: $color-brand-secondary;
+      }
+    }
+  }
+
+}

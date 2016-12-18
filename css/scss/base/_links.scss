@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+// Base Links
+a {
+  @include transition;
+  background-color: transparent;
+  vertical-align: baseline;
+  // Was a font specified for links?
+  @if variable-exists(base-link-font-family) {
+    font-family: ($base-link-font-family);
+  } @else {
+    font-family: inherit;
+  }
+  color: $base-link-color;
+  font-weight: $base-link-font-weight;
+  // Does a standard link have an underline?
+  @if $base-link-text-decoration {
+    text-decoration: $base-link-text-decoration;
+  }
+
+  img {
+    border: 0 none;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $base-link-color-hover;
+    // Does a standard link have an underline on hover?
+    @if $base-link-text-decoration-hover {
+      text-decoration: $base-link-text-decoration-hover;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline-width: 0;
+  }
+}
+
+// Anchor links
+a[href^="#"] {
+  color: $anchor-link-color;
+  font-weight: $anchor-link-font-weight;
+  text-decoration: $anchor-link-text-decoration;
+
+  &:hover {
+    color: $anchor-link-color-hover;
+  }
+}
+
+// Email links
+a[href^="mailto"] {
+  color: $email-link-color;
+  font-weight: $email-link-font-weight;
+  text-decoration: $email-link-text-decoration;
+
+  &:hover {
+    color: $link-external-color-hover;
+  }
+}
+
+// Phone links
+a[href^="tel"] {
+  font-weight: $phone-link-font-weight;
+  text-decoration: $phone-link-text-decoration;
+}

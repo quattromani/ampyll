@@ -1,0 +1,27 @@
+// Article Headers
+$article-header: true;
+$article-header-mobile: true;
+
+$article-header-margin: $base-spacing;
+$article-header-margin-bottom: $base-spacing;
+$article-header-padding: $half-spacing;
+
+$article-header-border-color: $color-brand-secondary;
+$article-header-bg-mobile: $article-header-border-color;
+
+$article-header-font-size: 34;
+$article-header-font-size-mobile: 34;
+$article-header-font-family: $heading-font-family;
+$article-header-font-weight: 700;
+$article-header-text-transform: uppercase;
+$article-header-text-align: left;
+$article-header-letter-spacing: .1em;
+
+$article-header-add-font-family: $base-font-family;
+$article-header-add-position: absolute;
+$article-header-add-top: 10px;
+
+$article-header-color: $color-brand-secondary;
+$article-header-color-mobile: $color-white;
+
+$article-header-hours-font-weight: 700;

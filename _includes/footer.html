@@ -1,0 +1,39 @@
+  </main>
+
+  <footer role="contentinfo">
+
+    <div itemscope itemtype="http://schema.org/LocalBusiness">
+      <span itemprop="name">{{ site.title }}</span><br>
+      <address itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">{{ site.map.address }}</span>
+        <span itemprop="addressLocality">{{ site.map.city }}</span>,
+        <span itemprop="addressRegion">{{ site.map.state }}</span>
+        <span itemprop="postalCode">{{ site.map.zip }}</span><br>
+        <span itemprop="telephone">local <a href="tel:{{ site.phone }}">{{ site.phone }}</a></span><br>
+        <span itemprop="telephone">toll-free <a href="tel:{{ site.tollfree }}">{{ site.tollfree }}</a></span><br>
+        <span itemprop="email">email <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
+      </address>
+    </div>
+
+    <nav>
+      <ul>
+        {% for nav in site.data.footer-nav %}
+        <li>
+          <a href="{{ nav.url }}">{{ nav.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <ul class="footer-social">
+      {% for social in site.data.socials %}
+      <li>
+        <a href="{{ social.url }}{{ social.username }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-{{ social.name | downcase }} fa-lg"></i></a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <p>&#169;{{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.title }}</a> &bull; All rights reserved.</p>
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe!</a>
+
+  </footer>

@@ -1,0 +1,18 @@
+// Linear Gradients
+@mixin linear-gradient($startColor: $color-dark-grey, $endColor: $color-light-grey) {
+  background-color: $startColor;
+  background: linear-gradient(to bottom, $startColor, $endColor);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', EndColorStr='#{$endColor}')";
+}
+
+// Horizontal Gradient
+@mixin horizontal-gradient($startColor, $to, $endColor: 100%) {
+  background-color: $startColor;
+  background: linear-gradient(to right, $startColor 0%, $to $endColor);
+}
+
+// Radial Gradient
+@mixin radial-gradient($startColor, $endColor) {
+  background-color: $startColor;
+  background: radial-gradient(center, circle cover, $startColor 0%, $endColor 100%);
+}

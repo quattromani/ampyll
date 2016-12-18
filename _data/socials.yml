@@ -1,0 +1,15 @@
+- name: "Facebook"
+  url: "https://www.facebook.com/"
+  username: "placewise"
+
+- name: "Twitter"
+  url: "https://twitter.com/"
+  username: "placewise"
+
+- name: "LinkedIn"
+  url: "https://www.linkedin.com/company/"
+  username: "placewise-media"
+
+- name: "Instagram"
+  url: "https://www.instagram.com/"
+  username: "placewise_media"

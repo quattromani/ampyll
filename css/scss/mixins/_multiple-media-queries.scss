@@ -1,0 +1,12 @@
+@mixin multiple-media-queries($media...) {
+  @each $query in $media {
+    @include media($query) {
+      @content
+    }
+  }
+}
+
+// Usage:
+// @include multiple-media($tablet, $mobile) {
+//   ...
+// }

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+// CTA's
+.cta {
+  @include padding($half-spacing $base-spacing);
+  @include border-radius($cta-border-radius);
+  @include font-family($cta-font-family);
+  @include font-size($cta-font-size);
+  @include box-shadow(inset 0 0 0 $cta-border-thickness $cta-border-color);
+  display: inline-block;
+  background-color: $cta-bg;
+  color: $cta-link-color;
+  font-weight: $cta-font-weight;
+  text-transform: $cta-text-transform;
+  text-decoration: $cta-text-decoration;
+
+  &:hover {
+    @include box-shadow(inset 0 0 0 $cta-border-thickness $cta-border-color-hover);
+    background-color: $cta-bg-hover;
+    color: $cta-link-color-hover;
+    text-decoration: $cta-text-decoration-hover;
+  }
+}

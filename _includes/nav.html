@@ -1,0 +1,15 @@
+{% assign current = page.url | split: '/' %}
+
+<nav role="navigation">
+  <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+    {% for nav in site.data.nav %}
+    {% if nav.name == page.parent %}
+    <li class="active" role="menuitem" itemprop="name">
+    {% else %}
+    <li role="menuitem" itemprop="name">
+      {% endif %}
+      <a href="{{ nav.url }}" itemprop="url">{{ nav.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+footer[role=contentinfo] {
+  @include outer-container;
+  @include padding($base-spacing);
+  position: relative;
+
+  nav {
+    @include horizontal-list(piped);
+  }
+
+  .footer-social {
+    @include horizontal-list(spaced);
+  }
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.btt {
+  @include icon-before($icon-arrow-circle-up, $font-size: 36px);
+  position: fixed;
+  right: $base-spacing;
+  bottom: $base-spacing;
+  will-change: transform;
+}

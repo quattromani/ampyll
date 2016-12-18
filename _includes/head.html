@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}</title>
+  <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 155 }}{% else %}{{ site.description | truncate: 155  }}{% endif %}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  {% include og_tags.html %}
+
+  {% include twitter_card.html %}
+
+  {% include schema_org.html %}
+
+  {% if page.path contains '_posts' %}
+    <link rel="amphtml" href="{{ page.id | prepend: '/amps' | prepend: site.baseurl | prepend: site.url }}">
+    {% include schema_article.html %}
+  {% endif %}
+
+  <script src="https://use.fontawesome.com/d6fce19103.js"></script>
+  <style>
+    {% include css/main.css %}
+  </style>
+
+  <!-- Google verification -->
+  {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+  {% include browser-upgrade.html %}
+
+  {% include header.html %}
+
+  <main class="{{ page.class }}" role="main">

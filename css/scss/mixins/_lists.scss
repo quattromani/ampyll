@@ -1,0 +1,173 @@
+// Vertical List Items
+@mixin vertical-list($arg: null, $padding: $half-spacing) {
+  > li {
+    @include padding($padding 0);
+    display: inline-block;
+    width: 100%;
+
+    @if $arg == lined {
+      border-bottom: 1px solid $list-border-color;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  li {
+    @if $arg == clear {
+      margin-left: 0;
+
+      &:after {
+        content: '';
+        @include padding;
+      }
+    }
+  }
+}
+
+@mixin horizontal-list($arg: null, $display: inline, $padding: $half-spacing, $separator-color: currentColor) {
+  li {
+    display: $display;
+
+    @if $arg == piped {
+      @include padding;
+
+      &:after {
+        @include padding(0 $padding);
+        content: '|';
+        color: $separator-color;
+      }
+
+      &:last-child:after {
+        @include padding;
+        content: '';
+      }
+    }
+
+    @if $arg == piped-spaced {
+      margin-left: $padding;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:after {
+        @include padding(0 $padding 0 $base-spacing);
+        content: '|';
+        color: $separator-color;
+      }
+
+      &:last-child:after {
+        @include padding;
+        content: '';
+      }
+    }
+
+    @if $arg == doublecolon {
+      @include padding;
+
+      &:after {
+        @include padding(0 $padding);
+        content: '::';
+        color: $separator-color;
+      }
+
+      &:last-child:after {
+        @include padding;
+        content: '';
+      }
+    }
+
+    @if $arg == bulleted {
+      @include padding;
+
+      &:after {
+        @include padding(0 $padding);
+        content: '•';
+        color: $separator-color;
+      }
+
+      &:last-child:after {
+        @include padding;
+        content: '';
+      }
+    }
+
+    @if $arg == slashed {
+      @include padding;
+
+      &:after {
+        @include padding(0 $padding);
+        content: '/';
+        color: $separator-color;
+      }
+
+      &:last-child:after {
+        @include padding;
+        content: '';
+      }
+    }
+
+    @if $arg == spaced {
+      margin-left: $padding;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    @if $arg == clear {
+      margin-left: 0;
+
+      &:after {
+        @include padding;
+        content: '';
+      }
+    }
+  }
+}
+
+@mixin bulleted {
+  ~ ul {
+    margin-bottom: 0;
+  }
+
+  > li {
+    list-style: outside disc;
+    margin-left: 1.25em;
+    border-bottom: 0;
+  }
+}
+
+@mixin bulleted-square {
+  ~ ul {
+    margin-bottom: 0;
+  }
+
+  > li {
+    list-style: outside square;
+    margin-left: 1.25em;
+    border-bottom: 0;
+  }
+}
+
+// Reset a list and remove default styles
+@mixin reset-list {
+  @include margin;
+  @include padding;
+  list-style: none;
+
+  li {
+    @include margin;
+    @include padding;
+    border: 0;
+    list-style: none;
+
+    &:after {
+      @include margin;
+      @include padding;
+      content: '';
+    }
+  }
+}

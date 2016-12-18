@@ -1,0 +1,146 @@
+@if $find-mistakes {
+
+  @charset "UTF-8";
+
+/* ==========================
+   Missing Images
+   ========================== */
+
+   img {
+    color: $color-brand-secondary;
+    font-weight: 300;
+    font-style: italics;
+    line-height: 2;
+    text-align: center;
+
+    &:before {
+      @include border-radius;
+      display: block;
+      position: absolute;
+      left: 0;
+      height: calc(100% + #{$half-spacing});
+      width: 100%;
+      border: 2px dotted $color-grey;
+      background-color: $color-light-grey;
+      content: '';
+    }
+
+    &:after {
+      @include center(vertical);
+      @include padding(0 $base-spacing);
+      @include font-family('fontawesome');
+      @include font-size(16);
+      content: "\f127" " Broken Image of " attr(alt);
+      display: block;
+      left: 0;
+      width: 100%;
+      color: $color-brand-secondary;
+      font-style: normal;
+      text-align: center;
+    }
+  }
+
+/* ==========================
+   Empty Elements
+   ========================== */
+
+   div,
+   span,
+   li,
+   p,
+   td,
+   th {
+    &:empty {
+      @include padding(2em);
+      border: 2px dotted $color-primary-red;
+    }
+  }
+
+/* ==========================
+   Empty Attributes
+   ========================== */
+
+   *[alt=""],
+   *[title=""],
+   *[class=""],
+   *[id=""],
+   a[href=""],
+   a[href="#"] {
+    border: 2px solid $color-primary-blue;
+  }
+
+/* ==========================
+   Deprecated Elements
+   ========================== */
+
+   applet,
+   basefont,
+   center,
+   dir,
+   font,
+   isindex,
+   menu,
+   strike {
+    border: 2px dotted $color-primary-red;
+    background-color: tint($color-primary-red, 40%);
+  }
+
+/* ==========================
+   Deprecated Attributes
+   ========================== */
+
+   *[background],
+   *[bgcolor],
+   *[clear],
+   *[color],
+   *[compact],
+   *[noshade],
+   *[nowrap],
+   *[size],
+   *[start],
+   *[bottommargin],
+   *[leftmargin],
+   *[rightmargin],
+   *[topmargin],
+   *[marginheight],
+   *[marginwidth],
+   *[alink],
+   *[link],
+   *[text],
+   *[vlink],
+   *[align],
+   *[valign],
+   *[hspace],
+   *[vspace],
+   *[height],
+   *[width],
+   ul[type],
+   ol[type],
+   li[type] {
+    border: 2px solid $color-primary-red;
+    background-color: tint($color-primary-red, 40%);
+  }
+
+/* ==========================
+   Proposed Deprecated Elements
+   ========================== */
+
+   big,
+   tt {
+    border: 2px dotted $color-primary-blue;
+    background-color: tint($color-primary-blue, 40%);
+  }
+
+/* ==========================
+   Proposed Deprecated Attributes
+   ========================== */
+
+   *[border],
+   a[target],
+   table[cellpadding],
+   table[cellspacing],
+   *[name] {
+    border: 2px solid $color-primary-blue;
+    background-color: tint($color-primary-blue, 40%);
+  }
+}

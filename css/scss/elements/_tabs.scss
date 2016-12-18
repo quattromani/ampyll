@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+// Tabs
+.tabbed-buttons {
+	ul {
+		@include horizontal-list;
+
+    li {
+      a {
+        @include padding($third-spacing $base-spacing);
+        @include font-family($heading-font-family-alt);
+        display: inline-block;
+        margin-right: $fourth-spacing;
+        background-color: $tab-bg;
+        color: $tab-text-color;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: $tab-bg-hover;
+          color: $tab-text-color-hover;
+        }
+
+        &.js-active,
+        &:active {
+          background-color: $tab-bg-active;
+          color: $tab-text-color-hover;
+        }
+
+        @include media($mobile) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      &:last-of-type {
+        a {
+          margin-right: 0;
+        }
+      }
+
+      @include media($mobile) {
+        display: block;
+        margin-bottom: $fourth-spacing;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      &.closer {
+        position: relative;
+        display: inline;
+        float: right;
+        top: $fourth-spacing;
+
+        a {
+          @include padding;
+          background-color: $color-white;
+          color: rgba($color-black, $site-alpha);
+
+          &:hover {
+            background-color: $color-white;
+            color: rgba($color-black, 1);
+          }
+        }
+
+        .icon-close {
+          @include border-radius(50%);
+          @include icon-before($icon-close);
+          display: inline-block;
+          border: 1px solid currentColor;
+        }
+
+        &.js-hidden {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include media($mobile) {
+    margin-top: $base-spacing;
+  }
+}

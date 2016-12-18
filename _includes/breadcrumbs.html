@@ -1,0 +1,21 @@
+<nav role="menubar" aria-label="breadcrumbs">
+  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a href="{{ site.url }}" itemprop="url">
+      <span itemprop="title">Home</span>
+    </a> ›
+    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      {% assign crumbs = page.url | split: '/' %}
+      {% for crumb in crumbs offset: 1 %}
+      {% if forloop.last %}
+      <a class="current" itemprop="url">
+        <span itemprop="title">{{ page.title }}</span>
+      </a>
+      {% else %}
+      <a href="{{ site.url }}{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}" itemprop="url">
+        <span itemprop="title">{{ crumb | replace:'-',' ' | capitalize }}</span>
+      </a> ›
+      {% endif %}
+      {% endfor %}
+    </span>
+  </span>
+</nav>

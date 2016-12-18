@@ -1,0 +1,68 @@
+// Teaser
+@mixin teaser {
+  position: relative;
+
+  * {
+    @include transition;
+  }
+
+  .retailer-logo {
+    display: none;
+  }
+
+  img,
+  .replaced-missing-image {
+    @include responsive-image(50% 50%, 150px, auto);
+    @include padding($half-spacing);
+    position: relative;
+    float: left;
+    margin-right: $base-spacing;
+    border: $teaser-border-width $teaser-border-style $teaser-border-color;
+    color: $color-brand-secondary;
+  }
+
+  h3,
+  h4 {
+    max-width: calc(100% - 6em);
+  }
+
+  h3,
+  h4 {
+    @include font-family($heading-font-family-alt);
+  }
+
+  time {
+    @extend .flag !optional;
+    position: absolute;
+    top: 0;
+    bottom: initial;
+    right: 0;
+    width: 8em;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .read-more {
+    @include margin($half-spacing 0);
+    color: $base-link-color !important;
+    font-weight: 600;
+  }
+
+  &:hover {
+    img {
+      @include opacity(.8);
+    }
+
+    h3 {
+      a {
+        color: $color-brand-primary !important;
+      }
+    }
+  }
+}
+
+[class*="-teaser"] {
+  @include teaser;
+}

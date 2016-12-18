@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+nav[role=navigation] {
+  @include horizontal-list;
+
+  li {
+    &.active {
+      a {
+        font-weight: 700;
+      }
+    }
+  }
+}

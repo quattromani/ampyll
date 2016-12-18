@@ -1,0 +1,27 @@
+// Article Bar
+@mixin article-bar {
+  @include font-size(25);
+  padding-bottom: $base-spacing;
+  margin-bottom: $base-spacing;
+  border-bottom: 1px solid $color-light-grey;
+  font-weight: 400;
+  color: $color-brand-primary;
+
+  @include media($mobile) {
+    padding-top: $base-spacing;
+    text-align: center;
+  }
+
+  a {
+    font-weight: 200;
+    color: $color-brand-primary;
+
+    &:hover {
+      color: $color-brand-primary;
+    }
+  }
+}
+
+.article-bar {
+  @include article-bar;
+}

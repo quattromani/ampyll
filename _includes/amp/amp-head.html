@@ -6,13 +6,13 @@
   <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-  {% include og_tags.html %}
+  {% include og-tags.html %}
 
-  {% include twitter_card.html %}
+  {% include twitter-card.html %}
 
-  {% include schema_org.html %}
+  {% include schema-org.html %}
 
-  {% include schema_article.html %}
+  {% include schema-article.html %}
 
   <style amp-custom>
     {% include css/main.css %}
@@ -32,7 +32,7 @@
       <script type="application/json">
         {
           "vars": {
-            "account": "{{ site.google_analytics_id }}"
+            "account": "{{ site.google-analytics-id }}"
           },
           "triggers": {
             "trackPageview": {

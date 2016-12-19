@@ -10,7 +10,7 @@ url: ""
 author: "Max Quattromani"
 
 # Build settings
-jquery_version: 3.1.1
+jquery-version: 3.1.1
 
 # Included Gems
 gems: [jekyll-admin, jekyll-paginate]
@@ -39,10 +39,10 @@ permalink: none
 exclude: ['node_modules']
 
 # Googles
-google_verify:
-google_analytics: false
-google_analytics_id:
-google_maps_javascript_api_key:
+google-verify:
+google-analytics: false
+google-analytics_id:
+google-maps-javascript-api-key:
 
 # Page-type Defaults
 defaults:

@@ -13,15 +13,15 @@
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  {% include og_tags.html %}
+  {% include og-tags.html %}
 
-  {% include twitter_card.html %}
+  {% include twitter-card.html %}
 
-  {% include schema_org.html %}
+  {% include schema-org.html %}
 
   {% if page.path contains '_posts' %}
     <link rel="amphtml" href="{{ page.id | prepend: '/amps' | prepend: site.baseurl | prepend: site.url }}">
-    {% include schema_article.html %}
+    {% include schema-article.html %}
   {% endif %}
 
   <script src="https://use.fontawesome.com/d6fce19103.js"></script>
@@ -30,7 +30,7 @@
   </style>
 
   <!-- Google verification -->
-  {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+  {% if site.google-verify %}<meta name="google-site-verification" content="{{ site.google-verify }}">{% endif %}
 
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
